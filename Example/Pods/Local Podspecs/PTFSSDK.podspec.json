@@ -18,6 +18,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "PTFSSDK/Classes/**/*",
-  "public_header_files": "Pod/Classes/PTFSSDK.h"
+  "source_files": "PTFSSDK/Classes/**/*"
 }

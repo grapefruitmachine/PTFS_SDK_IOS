@@ -7,6 +7,7 @@
 //
 
 #import "ZZBViewController.h"
+#import "PTFSSDK.h"
 
 @interface ZZBViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [[PTFSSDK sharedInstance] initializePTFSRepoWithCompletion:nil];
 }
 
 - (void)didReceiveMemoryWarning
