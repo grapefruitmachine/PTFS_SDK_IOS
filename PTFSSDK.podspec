@@ -29,7 +29,7 @@ TODO: PTFSSDK for iOS
   #   'PTFSSDK' => ['PTFSSDK/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/PTFSSDK.h'
+  # s.public_header_files = 'Pod/Classes/PTFSSDK.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
