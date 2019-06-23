@@ -11,12 +11,15 @@
 
 ### 使用说明
 
-PTFSSDK只支持arm64及以上真机上运行，目前暂时只支持手动拷贝SDK至工程。
+PTFSSDK只支持arm64及以上真机上运行，SDK不支持bitcode，设置bitcode为NO，选中target-Build Settings-搜索bitcode-把YES改成NO。
 
-#### 手动拷贝SDK至工程
-1. 将PTFSSDK.h和libPTFSSDK.a拖进工程，勾选Copy items if needed 和Add to targets。
-2. 设置bitcode为NO，选中target-Build Settings-搜索bitcode-把YES改成NO。
-3. 在需要使用 PTFSSDK 库文件接口的地方直接 import 即可：
+#### CocoaPods 安装
+### Podfile
+```
+platform :ios, '8.0'
+pod 'PTFSSDK'
+```
+在需要使用 PTFSSDK 库文件接口的地方直接 import 即可：
 ```objective-c
 #import "PTFSSDK.h"
 ```
@@ -38,7 +41,7 @@ PTFSResponse对象:
 @end
 ```
 上传和下载进度可以自己单独调用相应的获取进度接口获取，也可以通过ProgressBlock回调获取:
-```
+```objective-c
 typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize, NSInteger taskID);
 ```
 
@@ -47,7 +50,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
 
  @return 返回的单例
  */
- ```
+ ```objective-c
 + (instancetype)sharedInstance;
  ```
 ---
@@ -61,7 +64,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 失败（节点已经初始化）    {"code":3,"info":"错误信息"}
  - 失败（其它）              {"code":4,"info":"错误信息"}
  */
- ```
+ ```objective-c
 - (void)initializePTFSRepoWithCompletion:(nullable PTFSResponseBlock)completionBlock;
  ```
 ---
@@ -73,7 +76,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 成功，返回{"code":0,"info":""}；
  - 失败，返回{"code":1,"info":"错误信息"}
  */
-  ```
+  ```objective-c
 - (void)initializePTFSBootStrap:(nonnull NSString *)address
                      completion:(nullable PTFSResponseBlock)completionBlock;
  ```
@@ -85,7 +88,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 成功，返回{"code":1,"info":""}；
  - 失败，返回{"code":0,"info":"错误信息"}
  */
-  ```
+  ```objective-c
 - (void)startDaemonWithCompletion:(nullable PTFSResponseBlock)completionBlock;
  ```
 ---
@@ -94,7 +97,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
 
  @return 已启动返回true，否则返回false
  */
-```
+```objective-c
 - (BOOL)isDaemonOk;
  ```
 ---
@@ -105,7 +108,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 成功，返回{"code":1,"info":""}；
  - 失败，返回{"code":0,"info":"错误信息"}
  */
- ```
+ ```objective-c
 - (void)stopDaemonWithCompletion:(nullable PTFSResponseBlock)completionBlock;
  ```
 ---
@@ -116,7 +119,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 成功，返回{"code":1,"info":""}；
  - 失败，返回{"code":0,"info":"错误信息"}
  */
- ```
+ ```objective-c
 - (void)restartDaemonWithCompletion:(nullable PTFSResponseBlock)completionBlock;
  ```
 ---
@@ -129,7 +132,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 成功，返回{"code":文件/文件夹大小,"info":""}；
  - 失败，返回{"code":0,"info":"错误信息"}
  */
- ```
+ ```objective-c
 - (void)pathFileSizeWithPath:(nonnull NSString *)filePath
                        isDir:(BOOL)isDir
                   completion:(nullable PTFSResponseBlock)completionBlock;
@@ -146,7 +149,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 成功（上传任务开始），返回{"code":taskID,"info":"fileHash"}；
  - 失败（添加上传任务失败），返回{"code":0,"info":"错误信息"}
  */
- ```
+ ```objective-c
 - (void)uploadFileWithPath:(nonnull NSString *)sFilePath
                   fileSize:(NSUInteger)filesize
                      isDir:(BOOL)isDir
@@ -159,7 +162,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
 
  @param taskID 上传任务ID
  */
- ```
+ ```objective-c
 - (void)cancelUploadWithTaskId:(NSInteger)taskID;
  ```
 ---
@@ -169,7 +172,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  @param taskID 上传任务ID\
 @param completionBlock {"code":上传字节大小,"info":"错误信息"},错误信息用于表示文件上传任务开始后产生的错误
  */
- ```
+ ```objective-c
 - (void)uploadedFileSizeWithTaskId:(NSInteger)taskID
                         completion:(nullable PTFSResponseBlock)completionBlock;
  ```
@@ -179,7 +182,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
 
  @param taskID 上传任务ID
  */
-```
+```objective-c
 - (void)clearUploadInfoWithTaskId:(NSInteger)taskID;
 ```
 ---
@@ -193,7 +196,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 成功（下载任务开始），返回{"code":文件大小（字节）,"info":"taskID"}；
  - 失败（添加下载任务失败），返回{"code":0,"info":"错误信息"}
  */
-```
+```objective-c
 - (void)downloadFileWithFileHash:(nonnull NSString *)fileHash
                         savePath:(nonnull NSString *)sFilePath
                         progress:(PTFSProgressBlock)downloadProgressBlock
@@ -206,7 +209,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  @param taskID 下载任务ID
  @return 文件已下载的总字节大小
  */
-```
+```objective-c
 - (NSUInteger)downloadedFileSizeWithTaskId:(NSInteger)taskID;
 ```
 ---
@@ -218,7 +221,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 成功，返回{"code":1,"info":"stop download success"}；
  - 失败，返回{"code":0,"info":"错误信息"}
  */
-```
+```objective-c
 - (void)cancelDownloadingWithFileHash:(NSString *)fileHash
                            completion:(nullable PTFSResponseBlock)completionBlock;
 ```
@@ -228,7 +231,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
 
  @param taskID 下载任务ID
  */
-```
+```objective-c
 - (void)clearDownloadInfoWithTaskId:(NSInteger)taskID;
 ```
 ---
@@ -239,7 +242,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 成功，返回{"code":仓库大小（字节）,"info":""}；
  - 失败，返回{"code":0,"info":"错误信息"}
  */
-```
+```objective-c
 - (void)repoSizeWithCompletion:(nullable PTFSResponseBlock)completionBlock;
 ```
 ---
@@ -250,7 +253,7 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 成功，返回{"code":1,"info":""}；
  - 失败，返回{"code":0,"info":"错误信息"}
  */
-```
+```objective-c
 - (void)clearCacheWithCompletion:(nullable PTFSResponseBlock)completionBlock;
 ```
 ---
@@ -261,6 +264,6 @@ typedef void(^PTFSProgressBlock)(NSUInteger completedSize, NSUInteger totalSize,
  - 成功，返回{"code":下行带宽（字节/秒）,"info":""}；
  - 失败，返回{"code":0,"info":"错误信息"}
  */
-```
+```objective-c
 - (void)bandWidthWithCompletion:(nullable PTFSResponseBlock)completionBlock;
 ```
