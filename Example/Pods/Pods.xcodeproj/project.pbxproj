@@ -7,93 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F7DC60D9A4072A197E884D2CE07456A /* PTFSSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CFE6C23E40975AD785840245AFF7AB /* PTFSSDK-dummy.m */; };
-		2001C36222BCBF5000C2465F /* PTFSSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 2001C36022BCBF5000C2465F /* PTFSSDK.h */; };
-		2001C36322BCBF5000C2465F /* PTFSSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 2001C36022BCBF5000C2465F /* PTFSSDK.h */; };
-		2001C36422BCBF5000C2465F /* libPTFSSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2001C36122BCBF5000C2465F /* libPTFSSDK.a */; };
-		2001C36522BCBF5000C2465F /* libPTFSSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2001C36122BCBF5000C2465F /* libPTFSSDK.a */; };
-		6AC5980B77AD8B6EFE9127F516C902CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9C32D8068DC818FA5EE0B9199CBF7E1F /* Pods-PTFSSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E219943A6C126DD439E54C3013128437 /* Pods-PTFSSDK_Example-dummy.m */; };
-		C08E7D7131A2A7BCFDAC7608E404F9AB /* PTFSSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A4B30F25E310D7E76581DB97757E22 /* PTFSSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD84AAED7E3150A4484EDCAE66EBB568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F9586A93AF86737D173ED5C5B92509E3 /* Pods-PTFSSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1A534F78A3B6664B674CE1352B9123 /* Pods-PTFSSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B71C7CBCE35406DA6EAFDF87F012678 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9211C3798B37B79552299272593F58B4 /* Pods-PTFSSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E219943A6C126DD439E54C3013128437 /* Pods-PTFSSDK_Example-dummy.m */; };
+		DEAD25586CD6FF5D5ED89FF7A12120A9 /* Pods-PTFSSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1A534F78A3B6664B674CE1352B9123 /* Pods-PTFSSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		8B09FFEDC965E8A0DA6BAFB7BECD5A9F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 97E3B15B25316C00E66E9D2AFE5243E3;
-			remoteInfo = PTFSSDK;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		01541B1F1D243486C529136AFC687E94 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2001C36022BCBF5000C2465F /* PTFSSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTFSSDK.h; path = PTFSSDK/Classes/PTFSSDK.h; sourceTree = "<group>"; };
-		2001C36122BCBF5000C2465F /* libPTFSSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPTFSSDK.a; path = PTFSSDK/Classes/libPTFSSDK.a; sourceTree = "<group>"; };
-		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		37CFE6C23E40975AD785840245AFF7AB /* PTFSSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PTFSSDK-dummy.m"; sourceTree = "<group>"; };
 		3A1A534F78A3B6664B674CE1352B9123 /* Pods-PTFSSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PTFSSDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		3C6D8E4CB6F21F4BCBA389E55BB2CBC4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3D1AB27AE63732D6CE03A4F6AEA9F79F /* Pods-PTFSSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PTFSSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		41A04175F0A596BF4912BC44C2CC76C3 /* Pods_PTFSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTFSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFBE44A308AE96B2E68FD81E375B452 /* PTFSSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTFSSDK.h; path = PTFSSDK/Classes/PTFSSDK/PTFSSDK.h; sourceTree = "<group>"; };
+		509311C3A89B4C2CBE9EE04D4D3FF1C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5AB8E81DF7BB80899AF074F04AB7AB2A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6834F0E94EC9D8D394A9A8FB013A8664 /* PTFSSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PTFSSDK-prefix.pch"; sourceTree = "<group>"; };
+		5B539AD0F9158F0ADCC24B891001AE17 /* Pods_PTFSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PTFSSDK_Example.framework; path = "Pods-PTFSSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		619858E44485D2E25D6D82943CF94C5D /* PTFSSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = PTFSSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6E449EFB5E965B7485DEC0D9A5F62C72 /* Pods-PTFSSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PTFSSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		82E16F58E93817B049EABC0BCECF0D05 /* Pods-PTFSSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PTFSSDK_Example-resources.sh"; sourceTree = "<group>"; };
+		8AF4B7B699B9A61E9BE832D9267AAB8B /* libPTFSSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libPTFSSDK.a; path = PTFSSDK/Classes/PTFSSDK/libPTFSSDK.a; sourceTree = "<group>"; };
+		91EAAC4BBC5054159964D20A8F323414 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9A322D0D7AE05C87CC20D955CBA96154 /* Pods-PTFSSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PTFSSDK_Example.modulemap"; sourceTree = "<group>"; };
-		9E542A9B9D45228243BD5C737FFB721C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		BAD7E7C27CFA0BFDFF82EAA3596D6E5A /* PTFSSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PTFSSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6CCE714862527BABF19182F48966E8E /* PTFSSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PTFSSDK.modulemap; sourceTree = "<group>"; };
 		CB83683481D72E66422FA2A06BCDAB21 /* Pods-PTFSSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PTFSSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D4FE002D7DCF9DED73D481461AB0D32E /* PTFSSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PTFSSDK.xcconfig; sourceTree = "<group>"; };
 		D56667F51B2002FD59FC76CF361E4F9B /* Pods-PTFSSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTFSSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E219943A6C126DD439E54C3013128437 /* Pods-PTFSSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PTFSSDK_Example-dummy.m"; sourceTree = "<group>"; };
-		F9A4B30F25E310D7E76581DB97757E22 /* PTFSSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PTFSSDK-umbrella.h"; sourceTree = "<group>"; };
 		FE1762EEC5D6A3F8482F7F61E651F45B /* Pods-PTFSSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PTFSSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FE9F2403DA4F1C6F27B1546E3EC383CB /* PTFSSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = PTFSSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		95359E68EA107005F15937B6B3289C39 /* Frameworks */ = {
+		0DCC106AE8AC96CA09F1ECBE6202CBDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD84AAED7E3150A4484EDCAE66EBB568 /* Foundation.framework in Frameworks */,
-				2001C36422BCBF5000C2465F /* libPTFSSDK.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5240BD3F8920283B32DC296EEA24737 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6AC5980B77AD8B6EFE9127F516C902CF /* Foundation.framework in Frameworks */,
-				2001C36522BCBF5000C2465F /* libPTFSSDK.a in Frameworks */,
+				5B71C7CBCE35406DA6EAFDF87F012678 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A0530DE6F5140F7D31414EA55EAE4B8 /* Development Pods */ = {
+		02286F3797FCADB03EFBBBC3BA9084C9 /* PTFSSDK */ = {
 			isa = PBXGroup;
 			children = (
-				AB673014C5174ECC9D1C8B91A581527D /* PTFSSDK */,
+				3FFBE44A308AE96B2E68FD81E375B452 /* PTFSSDK.h */,
+				9004D68BDAB1C1BFD5D0D08652F550A1 /* Frameworks */,
+				0B785ED950A86C07003073A7DBF0F953 /* Pod */,
 			);
-			name = "Development Pods";
+			name = PTFSSDK;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		1C6E454BA5214FFB975650984749E7A1 /* Products */ = {
+		0B785ED950A86C07003073A7DBF0F953 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				41A04175F0A596BF4912BC44C2CC76C3 /* Pods_PTFSSDK_Example.framework */,
-				BAD7E7C27CFA0BFDFF82EAA3596D6E5A /* PTFSSDK.framework */,
+				509311C3A89B4C2CBE9EE04D4D3FF1C2 /* LICENSE */,
+				619858E44485D2E25D6D82943CF94C5D /* PTFSSDK.podspec */,
+				91EAAC4BBC5054159964D20A8F323414 /* README.md */,
 			);
-			name = Products;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		55C1ACFEF44FA217BB7AA3CFA10420E8 /* Pods-PTFSSDK_Example */ = {
@@ -114,14 +84,12 @@
 			path = "Target Support Files/Pods-PTFSSDK_Example";
 			sourceTree = "<group>";
 		};
-		84F155F6C04504137E203B989A423126 /* Pod */ = {
+		9004D68BDAB1C1BFD5D0D08652F550A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9E542A9B9D45228243BD5C737FFB721C /* LICENSE */,
-				FE9F2403DA4F1C6F27B1546E3EC383CB /* PTFSSDK.podspec */,
-				3C6D8E4CB6F21F4BCBA389E55BB2CBC4 /* README.md */,
+				8AF4B7B699B9A61E9BE832D9267AAB8B /* libPTFSSDK.a */,
 			);
-			name = Pod;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9545FBAA229BCFFA5FA0919B7E98B8FA /* Targets Support Files */ = {
@@ -132,16 +100,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AB673014C5174ECC9D1C8B91A581527D /* PTFSSDK */ = {
+		976C2E3FC07B5EC8EAD48428105BBD10 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2001C36022BCBF5000C2465F /* PTFSSDK.h */,
-				2001C36122BCBF5000C2465F /* libPTFSSDK.a */,
-				84F155F6C04504137E203B989A423126 /* Pod */,
-				C4D220F9CF938FE6336E4B06619FD8D3 /* Support Files */,
+				02286F3797FCADB03EFBBBC3BA9084C9 /* PTFSSDK */,
 			);
-			name = PTFSSDK;
-			path = ../..;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		ABD971D6ABDD318D258D70D51E6F3A6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B539AD0F9158F0ADCC24B891001AE17 /* Pods_PTFSSDK_Example.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -152,27 +124,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C4D220F9CF938FE6336E4B06619FD8D3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				01541B1F1D243486C529136AFC687E94 /* Info.plist */,
-				C6CCE714862527BABF19182F48966E8E /* PTFSSDK.modulemap */,
-				D4FE002D7DCF9DED73D481461AB0D32E /* PTFSSDK.xcconfig */,
-				37CFE6C23E40975AD785840245AFF7AB /* PTFSSDK-dummy.m */,
-				6834F0E94EC9D8D394A9A8FB013A8664 /* PTFSSDK-prefix.pch */,
-				F9A4B30F25E310D7E76581DB97757E22 /* PTFSSDK-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PTFSSDK";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				24390EFD555DD124430DFF9724065945 /* Podfile */,
-				0A0530DE6F5140F7D31414EA55EAE4B8 /* Development Pods */,
+				976C2E3FC07B5EC8EAD48428105BBD10 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				1C6E454BA5214FFB975650984749E7A1 /* Products */,
+				ABD971D6ABDD318D258D70D51E6F3A6E /* Products */,
 				9545FBAA229BCFFA5FA0919B7E98B8FA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -188,62 +146,33 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6AA0BABB00F9B1CF125A4C46537E3CB1 /* Headers */ = {
+		B1948323E8C4188B901578B9D49E118C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2001C36322BCBF5000C2465F /* PTFSSDK.h in Headers */,
-				C08E7D7131A2A7BCFDAC7608E404F9AB /* PTFSSDK-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5EA48FD12CCEE2CA2C0311AFC8AC52A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2001C36222BCBF5000C2465F /* PTFSSDK.h in Headers */,
-				F9586A93AF86737D173ED5C5B92509E3 /* Pods-PTFSSDK_Example-umbrella.h in Headers */,
+				DEAD25586CD6FF5D5ED89FF7A12120A9 /* Pods-PTFSSDK_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		93AB3D89B2475BC6071B50884E58B5CF /* Pods-PTFSSDK_Example */ = {
+		5634BDBC90FC0EDA21D8919A56B144A9 /* Pods-PTFSSDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6316442C26039C71D9CA57A072F6530 /* Build configuration list for PBXNativeTarget "Pods-PTFSSDK_Example" */;
+			buildConfigurationList = E6E992ABE0A82B1BA60FB4FA8BFCC5E6 /* Build configuration list for PBXNativeTarget "Pods-PTFSSDK_Example" */;
 			buildPhases = (
-				A5EA48FD12CCEE2CA2C0311AFC8AC52A /* Headers */,
-				47ED4C980C7683D7769CDE5233F8708E /* Sources */,
-				95359E68EA107005F15937B6B3289C39 /* Frameworks */,
-				2D1CBF3F61C3FF3C97A00B3E286D26EB /* Resources */,
+				B1948323E8C4188B901578B9D49E118C /* Headers */,
+				7BEEEBD7D05D621AA550BF19F279230B /* Sources */,
+				0DCC106AE8AC96CA09F1ECBE6202CBDA /* Frameworks */,
+				E916CEFC44EF4E61C95FB9A262F4662A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A0BE5A2CEFCE1896822BDBDF05C37114 /* PBXTargetDependency */,
 			);
 			name = "Pods-PTFSSDK_Example";
 			productName = "Pods-PTFSSDK_Example";
-			productReference = 41A04175F0A596BF4912BC44C2CC76C3 /* Pods_PTFSSDK_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		97E3B15B25316C00E66E9D2AFE5243E3 /* PTFSSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 439958520343910CF5CE0107572DA5E2 /* Build configuration list for PBXNativeTarget "PTFSSDK" */;
-			buildPhases = (
-				6AA0BABB00F9B1CF125A4C46537E3CB1 /* Headers */,
-				C522916397DD860564FF76F69EDF6C6C /* Sources */,
-				D5240BD3F8920283B32DC296EEA24737 /* Frameworks */,
-				5DD183A542960ECF80E7CE86D8A93B56 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PTFSSDK;
-			productName = PTFSSDK;
-			productReference = BAD7E7C27CFA0BFDFF82EAA3596D6E5A /* PTFSSDK.framework */;
+			productReference = 5B539AD0F9158F0ADCC24B891001AE17 /* Pods_PTFSSDK_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -263,25 +192,17 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1C6E454BA5214FFB975650984749E7A1 /* Products */;
+			productRefGroup = ABD971D6ABDD318D258D70D51E6F3A6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93AB3D89B2475BC6071B50884E58B5CF /* Pods-PTFSSDK_Example */,
-				97E3B15B25316C00E66E9D2AFE5243E3 /* PTFSSDK */,
+				5634BDBC90FC0EDA21D8919A56B144A9 /* Pods-PTFSSDK_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2D1CBF3F61C3FF3C97A00B3E286D26EB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5DD183A542960ECF80E7CE86D8A93B56 /* Resources */ = {
+		E916CEFC44EF4E61C95FB9A262F4662A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,38 +212,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		47ED4C980C7683D7769CDE5233F8708E /* Sources */ = {
+		7BEEEBD7D05D621AA550BF19F279230B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C32D8068DC818FA5EE0B9199CBF7E1F /* Pods-PTFSSDK_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C522916397DD860564FF76F69EDF6C6C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F7DC60D9A4072A197E884D2CE07456A /* PTFSSDK-dummy.m in Sources */,
+				9211C3798B37B79552299272593F58B4 /* Pods-PTFSSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		A0BE5A2CEFCE1896822BDBDF05C37114 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PTFSSDK;
-			target = 97E3B15B25316C00E66E9D2AFE5243E3 /* PTFSSDK */;
-			targetProxy = 8B09FFEDC965E8A0DA6BAFB7BECD5A9F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		38EDF379C3FCBED60839E6DDC3282A1D /* Release */ = {
+		1D8D874FD7234A484FC17031AC554EF4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4FE002D7DCF9DED73D481461AB0D32E /* PTFSSDK.xcconfig */;
+			baseConfigurationReference = FE1762EEC5D6A3F8482F7F61E651F45B /* Pods-PTFSSDK_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -332,17 +237,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PTFSSDK/PTFSSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PTFSSDK/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PTFSSDK_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PTFSSDK/PTFSSDK.modulemap";
-				PRODUCT_MODULE_NAME = PTFSSDK;
-				PRODUCT_NAME = PTFSSDK;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PTFSSDK_Example/Pods-PTFSSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -405,7 +312,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -477,71 +385,7 @@
 			};
 			name = Debug;
 		};
-		6A6C5EE1E9F972686D4D83B5C0705E45 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4FE002D7DCF9DED73D481461AB0D32E /* PTFSSDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PTFSSDK/PTFSSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PTFSSDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PTFSSDK/PTFSSDK.modulemap";
-				PRODUCT_MODULE_NAME = PTFSSDK;
-				PRODUCT_NAME = PTFSSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B8E234B8DE5EAA8F2A338BEF70D902B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE1762EEC5D6A3F8482F7F61E651F45B /* Pods-PTFSSDK_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PTFSSDK_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PTFSSDK_Example/Pods-PTFSSDK_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C5C5EA1CCD529E34C344FB12B78EA8E2 /* Debug */ = {
+		FC5D1B56827DE089A56D46404E80BCCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D56667F51B2002FD59FC76CF361E4F9B /* Pods-PTFSSDK_Example.debug.xcconfig */;
 			buildSettings = {
@@ -577,15 +421,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		439958520343910CF5CE0107572DA5E2 /* Build configuration list for PBXNativeTarget "PTFSSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A6C5EE1E9F972686D4D83B5C0705E45 /* Debug */,
-				38EDF379C3FCBED60839E6DDC3282A1D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -595,11 +430,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6316442C26039C71D9CA57A072F6530 /* Build configuration list for PBXNativeTarget "Pods-PTFSSDK_Example" */ = {
+		E6E992ABE0A82B1BA60FB4FA8BFCC5E6 /* Build configuration list for PBXNativeTarget "Pods-PTFSSDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5C5EA1CCD529E34C344FB12B78EA8E2 /* Debug */,
-				B8E234B8DE5EAA8F2A338BEF70D902B4 /* Release */,
+				FC5D1B56827DE089A56D46404E80BCCB /* Debug */,
+				1D8D874FD7234A484FC17031AC554EF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

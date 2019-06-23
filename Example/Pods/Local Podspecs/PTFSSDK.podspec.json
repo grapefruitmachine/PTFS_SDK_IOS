@@ -12,11 +12,15 @@
     "孙启明": "344602144@qq.com"
   },
   "source": {
-    "git": "https://github.com/grapefruitmachine/PTFS_SDK_IOS.git",
+    "git": "https://github.com/grapefruitmachine/PTFS_SDK_IOS2.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "PTFSSDK/Classes/**/*"
+  "requires_arc": true,
+  "source_files": "PTFSSDK/Classes/PTFSSDK/*.{h}",
+  "public_header_files": "PTFSSDK/Classes/PTFSSDK/*.{h}",
+  "vendored_libraries": "PTFSSDK/Classes/PTFSSDK/*.{a}",
+  "static_framework": true
 }
