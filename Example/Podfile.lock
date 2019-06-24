@@ -1,16 +1,27 @@
 PODS:
+  - IJKMediaFramework (0.1.2)
+  - Masonry (1.1.0)
   - PTFSSDK (0.1.0)
 
 DEPENDENCIES:
+  - IJKMediaFramework
+  - Masonry
   - PTFSSDK (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IJKMediaFramework
+    - Masonry
 
 EXTERNAL SOURCES:
   PTFSSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
+  IJKMediaFramework: a1df7357a01a11e65568b8d6cd16ca270be01034
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   PTFSSDK: 1eddb82cfe319110da6ad507bc3c270e5f73e790
 
-PODFILE CHECKSUM: 7de67268865f9fc3e2bf2b1ee8da178ea4e6503c
+PODFILE CHECKSUM: 0959c74b892f6c777fd93ed8e2159f72cd40b26e
 
 COCOAPODS: 1.5.3

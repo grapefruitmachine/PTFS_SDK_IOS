@@ -1,6 +1,0 @@
-framework module PTFSSDK {
-  umbrella header "PTFSSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}
