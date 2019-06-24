@@ -383,6 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = ALL_Dev_Test_0612;
+				VALID_ARCHS = "arm64 arm64e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -403,6 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = ALL_Dev_Test_0612;
+				VALID_ARCHS = "arm64 arm64e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
